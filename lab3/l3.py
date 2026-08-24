@@ -1,6 +1,5 @@
 import numpy as np
 
-# Derivative of ReLU activation function
 def relu_derivative(z):
     return (z > 0).astype(float)
 
