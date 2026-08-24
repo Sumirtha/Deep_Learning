@@ -10,7 +10,7 @@ np.random.seed(69)
 y_true = 1.0  # loss: L = 0.5 * (y_hat - y)^2
 
 # NETWORK 1 BACKWARD PASS (4 inputs to 1 output)
-# Forward pass setup
+# Forward pass
 x1 = np.random.randn(4)
 W1_net1 = np.random.randn(1, 4)
 b1_net1 = np.random.randn(1)
@@ -31,7 +31,7 @@ print("Weight Gradients (dW1):\n", dW1_net1)
 print("Bias Gradient (db1):", db1_net1)
 
 # NETWORK 2 BACKWARD PASS (4 to 3 to 2 to 1)
-# Forward pass setup
+# Forward pass 
 x2 = np.random.randn(4)
 W1 = np.random.randn(3, 4); b1 = np.random.randn(3)
 W2 = np.random.randn(2, 3); b2 = np.random.randn(2)
